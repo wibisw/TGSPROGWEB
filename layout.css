@@ -13,12 +13,12 @@ body{
 	background-attachment : fixed;
 	background-size : 100% auto;
 }
-.blended_grid{
-	display : block;
-	width : 900px;
-	overflow : auto;
-	margin : 0 auto;
+
+h1{
+	font-size: 200px;
+	font-family: segoelight;
 }
+
 /*Nav Menu*/
 ul.nav{
 	position: fixed;
@@ -26,8 +26,9 @@ ul.nav{
 	display: inline;
 	background-color: rgba(0,0,0,0.5);
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	text-align: center;
+	z-index: 1000;
 }
 ul.nav > li{
 	padding: 0px 30px;
@@ -36,7 +37,7 @@ ul.nav > li{
 ul.nav > li > a{
 	font-family: segoelight;
 	display: inline-block;
-	padding-top: 3px;
+	padding-top: 15px;
     color: white;
     text-decoration: none;
 }
@@ -48,8 +49,7 @@ ul.nav > li > a.active {
 	font-weight: bold;
 }
 
-
-
+/*body*/
 .pageHeader{
 	background-color : rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -57,26 +57,109 @@ ul.nav > li > a.active {
 	clear : none;
 	height : 100vh;
 	width : 100%;
+	padding-top: 5vh;
 }
 .pageBody1{
 	background-color : rgba(255, 255, 255, 1);
 	clear : none;
 	height : 100vh;
 	width : 100%;
+	padding-top: 25vh;
+	text-align: center;
 }
-.pageContent{
-	background-color : rgba(0, 0, 0, 0.5);
-	float : left;
+.pageBody2{
+	height : 100vh;
+	width : 100%;
+}
+.sub1Body2{
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	clear: none;
+	float: left;
+	height: 80vh;
+	width: 40%;
+	margin-left: 9%;
+	margin-top: 10vh;
+}
+.sub2Body2{
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	clear: none;
+	float: right;
+	height: 80vh;
+	width: 40%;
+	margin-right: 9%;
+	margin-top: 10vh;
+}
+.contentB2{
+	background-color: rgba(0,0,0,0);
+	color: white;
+	height: 90%;
+	width: 90%;
+	margin: 5%;
+	font-family: segoelight;
+}
+.pageBody3{
+	background-color : rgba(255, 255, 255, 1);
 	clear : none;
-	border : 5px solid red;
-	height : 600px;
-	width : 700px;
+	height : 100vh;
+	width : 100%;
+	padding-top: 25vh;
+	text-align: center;
 }
+.pageBody4{
+	height: 100vh;
+	width : 100%;
+}
+.sub1Body4{
+	position: relative;
+	height: 80vh;
+	width: 20%;
+	background-color: rgba(0,0,0,0.5);
+	margin-right: 1%;
+	margin-left: 8%;
+	margin-top: 10vh;
+	float: left;
+}
+.sub2Body4,.sub3Body4,.sub4Body4{
+	margin-top: 10vh;
+	position: relative;
+	height: 80vh;
+	width: 20%;
+	background-color: rgba(0,0,0,0.5);
+	margin-right: 1%;
+	float: left;
+}
+.subDiv{
+	height: 35%;
+	width: 90%;
+	margin-left: 5%;
+	font-family: segoelight;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+.subDiv2{
+	height: 60%;
+	width: 90%;
+	font-family: segoelight;
+	margin-left:5%;
+	text-align: center;
+	padding-top: 2vh;
+}
+
 .pageFooter{
-	background-color : rgba(0, 0, 0, 0.5);
-	float : left;
+	background-color : rgba(255, 255, 255, 0);
 	clear : none;
-	border : 5px solid red;
-	height : 100px;
-	width : 900px;
+	height : 72vh;
+	text-align: center;
+	align-content: center;
+}
+.contentFooter{
+	background-color: rgba(0,0,0,0.5);
+	font-family: segoelight;
+	font-size: 2vw;
+	color: white;
+	margin-left: 33.5%;
+	height: 22vh;
+	width: 32.6vw;
 }
